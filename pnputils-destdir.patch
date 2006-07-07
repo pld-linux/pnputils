@@ -1,0 +1,18 @@
+--- pnputils-0.1/Makefile.orig	2006-07-07 00:54:10.000000000 +0200
++++ pnputils-0.1/Makefile	2006-07-07 10:52:50.000000000 +0200
+@@ -12,9 +12,12 @@
+ 	M=`echo $(DATE)`; sed <$< >$@ "s/@TODAY@/$$M/;s/@VERSION@/pnputils-$(VERSION)/;"
+ 
+ install: all
+-	install -m 755 lspnp setpnp /sbin
+-	install -m 644 lspnp.8 setpnp.8 /usr/share/man/man8
+-	install -m 644 pnp.ids /usr/share/misc
++	install -d $(DESTDIR)/sbin
++	install -m 755 lspnp setpnp $(DESTDIR)/sbin
++	install -d $(DESTDIR)/usr/share/man/man8
++	install -m 644 lspnp.8 setpnp.8 $(DESTDIR)/usr/share/man/man8
++	install -d $(DESTDIR)/usr/share/misc
++	install -m 644 pnp.ids $(DESTDIR)/usr/share/misc
+ 
+ REL=pnputils-$(VERSION)
+ DISTTMP=/tmp/pnputils-dist
