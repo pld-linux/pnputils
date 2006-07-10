@@ -1,4 +1,5 @@
 Summary:	lspnp - list Plug and Play BIOS device nodes and resources
+Summary(pl):	lspnp - wypisywanie urz±dzeñ i zasobów BIOS-u Plug and Play
 Name:		pnputils
 Version:	0.1
 Release:	1
@@ -14,6 +15,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This utility presents a formatted interpretation of the contents of
 the /sys/bus/pnp/devices or /proc/bus/pnp.
+
+%description -l pl
+To urz±dzenie prezentuje sformatowan± interpretacjê zawarto¶ci
+/sys/bus/pnp/devices lub /proc/bus/pnp.
 
 %prep
 %setup -q
