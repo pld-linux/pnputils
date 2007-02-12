@@ -1,5 +1,5 @@
 Summary:	lspnp - list Plug and Play BIOS device nodes and resources
-Summary(pl.UTF-8):   lspnp - wypisywanie urządzeń i zasobów BIOS-u Plug and Play
+Summary(pl.UTF-8):	lspnp - wypisywanie urządzeń i zasobów BIOS-u Plug and Play
 Name:		pnputils
 Version:	0.1
 Release:	1
